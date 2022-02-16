@@ -1,0 +1,11 @@
+n=int(input("Enter length of Array"))
+a=[]
+print("Enter element ")
+for i in range(n):
+    b=int(input())
+    a.append(b)
+a.sort()
+k=int(input("enter the minimum number you want to know  "))
+print(a[k-1])
+u=int(input("enter the maximum number you want to know  "))
+print(a[n-u])
