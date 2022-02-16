@@ -1,0 +1,15 @@
+#Find the "Kth" max and min element of an array 
+
+n=int(input("Enter length of Array"))
+a=[]
+
+for i in range(n):
+    a.append(int(input("Enter elements")))
+a.sort()
+k=int(input("enter the minimum number you want to know"))
+u=int(input("enter the maximum number you want to know"))
+for i in a:
+    if(i==k) or (u==i):
+        print(k,u)
+    else:
+        print("Doesnt exist in list")
