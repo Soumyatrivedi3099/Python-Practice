@@ -1,0 +1,13 @@
+a=[34,3,43,12,9,7]
+n=len(a)
+for i in range(0,n):
+    swapped=False
+    for j in range(0,n-i-1):
+        if(a[j]>a[j+1]):
+            t=a[j]
+            a[j]=a[j+1]
+            a[j+1]=t
+            swapped = True
+    if(swapped ==False):
+        break
+print(a)
