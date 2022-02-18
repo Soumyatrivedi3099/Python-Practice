@@ -1,0 +1,11 @@
+a=[10, 12, 10, 15, -1, 7, 6,5, 4, 2, 1, 1, 1]
+n=len(a)
+sum=11
+count=0
+for i in range(0,n):
+    for j in range(i+1,n):
+        if (a[i]+a[j])==sum:
+            count=count+1
+            
+    
+count
