@@ -1,0 +1,17 @@
+a=[3,6]
+b=[1,5,0]
+n=len(a)
+m=len(b)
+d=[]
+e=[]
+for i in range(n):
+    for j in range(m):
+        c=a+b
+        c.sort()
+for i in range(n):
+    d.append(c[i])
+    c.pop(i)
+for j in range(m):
+    e.append(c[j])
+    
+print(d,e)
