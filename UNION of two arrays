@@ -1,0 +1,16 @@
+#UNION
+a=[5,3]
+b=[1,2,3,4,5]
+c=[]
+for i in range(0, len(a)-1):
+    for j in range(0,len(b)-1):
+        if(a[i]==b[j]):
+            c.append(a[i])
+            a.pop(i)
+            b.pop(j) 
+d=a+b+c
+u = []
+for i in d:
+    if i not in u:
+        u.append(i)
+print("Union",u)
